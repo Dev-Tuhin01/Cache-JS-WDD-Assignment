@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cached Registration form</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+
+    <div class="form-container">
+      <div class="form-groups">
+        <label for="Name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name..">
+      </div>
+      <div class="form-groups">
+        <label for="reg">Registartion Number:</label>
+        <input type="text" name="reg" id="reg" placeholder="Enter Your Registartion No..">
+
+      </div>
+      <div class="form-groups">
+        <label for="reg">Roll Number:</label>
+        <input type="text" name="roll" id="roll" placeholder="Enter Your Roll No..">
+      </div>
+
+      <div class="buttons">
+        <button id="add-cache">Add to Cache</button>
+        <button id="delete-cache">Clear Cache</button>
+      </div>
+    </div>
+
+    <div class="student-list">
+      <h2>Cached Student details</h2>
+      <div id="students-container">
+        <p class="no-data">No Student Data available...</p>
+      </div>
+    </div>
+    <script src="Assets/index.js"></script>
+</body>
+</html>
