@@ -27,9 +27,9 @@ addCacheBtn.addEventListener("click",()=>{
 
   display();
 
-  name.value = "";
-  Reg.value = "";
-  roll.value = "";
+  name = "";
+  Reg = "";
+  roll = "";
 
 })
 
@@ -41,9 +41,11 @@ deleteCacheBtn.addEventListener("click",()=>{
 function display() {
   let Students = JSON.parse(localStorage.getItem("Reg-Data") || '[]');
 
-  console.log(Students.length,`<p class="no-data">No Student Data available...</p>`)
+  console.log(Students.length,``)
   if (Students.length === 0) {
-    studentsContainer.innerHTML = '<p class="no-data">No Student Data available...</p>'
+    studentsContainer.innerHTML = `<div id="students-container">
+        <p class="no-data">No Student Data available...</p>
+      </div>`
   }
 
   let html = "";
